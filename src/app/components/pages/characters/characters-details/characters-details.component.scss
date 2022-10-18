@@ -1,0 +1,60 @@
+.character__details {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-left {
+  background: 0 0;
+  border: 0;
+  font-size: 22px;
+  line-height: 2em;
+  position: relative;
+  width: 8em;
+  height: 2em;
+}
+.btn-left a {
+  color: #232323;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+.btn-left::after,
+.btn-left::before {
+  background: #fff;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  height: 1em;
+}
+.btn-left::before {
+  box-shadow: -1px 1px 0 #fff, -2px 2px 0 #fff, -3px 3px 0 #fff, -4px 4px 0 #fff;
+  -webkit-transform: skew(45deg);
+  transform: skew(45deg);
+  bottom: 0;
+  z-index: 1;
+}
+.btn-left::after {
+  box-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #fff;
+  -webkit-transform: skew(-45deg);
+  transform: skew(-45deg);
+  top: 0;
+}
+.btn-left:hover::after,
+.btn-left:hover::before {
+  background: #ccc;
+}
+.btn-left:focus {
+  outline: 0;
+}
+.btn-left:focus::after,
+.btn-left:focus::before {
+  background: #ccc;
+}

@@ -1,1 +1,6 @@
-<p>characters-details works!</p>
+<section class="character__details">
+  <app-characters-card *ngIf="character$ |async as character" [character]="character"></app-characters-card>
+</section>
+<div style="text-align: center">
+  <button class="btn-left"><a [routerLink]="['/']">Ir al inicio</a></button>
+</div>
