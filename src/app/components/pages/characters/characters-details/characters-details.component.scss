@@ -13,17 +13,19 @@
   width: 8em;
   height: 2em;
 }
+
 .btn-left a {
-  color: #232323;
+  color: #e5b8f4;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  z-index: 10;
+  z-index
+  : 10;
 }
 .btn-left::after,
 .btn-left::before {
-  background: #fff;
+  background: #810ca8;
   border-radius: 2px;
   content: "";
   display: block;
@@ -34,27 +36,32 @@
   transition: all 1s;
   height: 1em;
 }
+
 .btn-left::before {
-  box-shadow: -1px 1px 0 #fff, -2px 2px 0 #fff, -3px 3px 0 #fff, -4px 4px 0 #fff;
+  box-shadow: -1px 1px 0 #810ca8, -2px 2px 0 #810ca8, -3px 3px 0 #810ca8, -4px 4px 0 #810ca8;
   -webkit-transform: skew(45deg);
   transform: skew(45deg);
   bottom: 0;
   z-index: 1;
 }
+
 .btn-left::after {
-  box-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #fff;
+  box-shadow: 1px 1px 0 #810ca8, 2px 2px 0 #810ca8, 3px 3px 0 #810ca8, 4px 4px 0 #810ca8;
   -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
   top: 0;
 }
+
 .btn-left:hover::after,
 .btn-left:hover::before {
-  background: #ccc;
+  background: #810ca8;
 }
+
 .btn-left:focus {
   outline: 0;
 }
+
 .btn-left:focus::after,
 .btn-left:focus::before {
-  background: #ccc;
+  background: #810ca8;
 }

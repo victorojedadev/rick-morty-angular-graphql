@@ -38,12 +38,15 @@ section.search__container {
 
   button {
     padding: 0.75rem;
-    border: 1px solid #cdd4da;
+    border: 1px solid #810CA8;
     border-radius: 0.25rem;
     height: calc(2.25rem + 2px);
     margin: 1px 7px;
     font-weight: 400;
     cursor: pointer;
+    background: #810CA8;
+    color: white;
+    font-weight: 600;
 
     &:focus {
       outline: none;
